@@ -1,11 +1,16 @@
-@import './variables';
-@import './common';
-@import './about-section';
-@import './callback-section';
-@import './cases-section';
-@import './hero-section';
-@import './page-footer';
-@import './page-header';
-@import './post-section';
-@import './team-section';
-@import './why-us-section';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+
+@import './layouts/hero-section';
+@import './layouts/page-header';
+@import './layouts/about-section';
+@import './layouts/why-us-section';
+@import './layouts/cases-section';
+@import './layouts/post-section';
+@import './layouts/team-section';
+@import './layouts/callback-section';
+@import './layouts/page-footer';
