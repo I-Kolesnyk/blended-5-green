@@ -1,0 +1,12 @@
+.container {
+  width: 1360px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.container__without-paddings {
+  padding-left: 0;
+  padding-right: 0;
+}

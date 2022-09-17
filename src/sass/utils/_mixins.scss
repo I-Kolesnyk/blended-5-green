@@ -1,0 +1,25 @@
+@mixin flex($disp: flex, $jc: center, $ai: center) {
+  display: $disp;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+@mixin bcgImage() {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin absCenteredY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin absCentered() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
