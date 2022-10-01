@@ -1,0 +1,64 @@
+.cases__container {
+  margin: 0;
+  height: auto;
+  display: grid;
+  place-items: center;
+  background-color: var(--first-bgc);
+  padding-top: 55px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cases__list {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 35s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: perspective(1300px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1300px) rotateY(360deg);
+  }
+}
+.cases .cases__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+.cases__container .cases__list .cases__img {
+  position: absolute;
+  object-fit: cover;
+  border: 0px solid;
+  border-radius: 35px;
+}
+.cases__top-title {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+.cases__title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 34px;
+}
+.cases__text {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 60px;
+}
