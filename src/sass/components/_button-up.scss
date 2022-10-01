@@ -1,0 +1,13 @@
+.button-up {
+  @include flex;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 50px;
+  background-color: green;
+}
+
+.about__icon {
+  fill: black;
+}
